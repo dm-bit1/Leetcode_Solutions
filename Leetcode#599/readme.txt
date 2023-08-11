@@ -1,4 +1,4 @@
-The solution file solves Leetcode 599. Minimum Index Sum of Two Lists.
+The solution file solves Leetcode 599. Minimum Index Sum of Two Lists. It beats 85% or runtimes on average.
 # Intuition
 Much more difficult, time consuming, than I thought initially. The code iterates both lists and adds matching named elements to a vector.
 Then, several more iterations and comparisons are done to get the name of all occurences of minimum sum elements into a vector.
