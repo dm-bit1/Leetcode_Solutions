@@ -4,10 +4,12 @@ public:
         vector<pair<int,int>> m = {};
         int a = 0, b = 0;   // keep track of indices in list1, list2
         // 1. add to vector the matching names using index in list1, index sum in the pair
+        pair<int,int> myPair;
+        
         for (string& i:list1){
             for (string& j:list2){
                 if (i == j) {
-                    pair<int,int> myPair = make_pair(a,a+b);
+                    myPair = make_pair(a,a+b);
                     // cout << a << ", " << a+b << endl;
                     m.push_back(myPair);
                 }
