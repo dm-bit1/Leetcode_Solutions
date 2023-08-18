@@ -4,11 +4,12 @@ public:
         int n = edges.size();
         int a = 0, t = 0, f = 0;
         int node = 0;
-        for (int i = 0; i < n-1; i++){
+        int i = 0, j = 0;
+        for (i = 0; i < n-1; i++){
             f = edges[i][0];
             t = edges[i][1];
             a=1;
-            for (int j = i+1; j < n; j++) {
+            for (j = i+1; j < n; j++) {
                 if (edges[j][0] == f || edges[j][1] == f) {
                     a++;
                     node = f;
