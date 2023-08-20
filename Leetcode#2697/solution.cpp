@@ -15,9 +15,7 @@ public:
             if (s[i] > s[j]) {
                 res[i] = s[j];
                 res[j] = s[j];
-                
-            }
-            else {
+            } else {
                 res[i] = s[i];
                 res[j] = s[i];
             }
