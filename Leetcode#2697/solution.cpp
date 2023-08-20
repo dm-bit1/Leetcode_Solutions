@@ -5,7 +5,7 @@ public:
         int m = n/2; // midpoint
         int i=0, j=n-1;
         string res(n, '\0'); // result
-        int y = 0;
+
         if (n%2 == 1) {
             res[m] = s[m];
         }
