@@ -11,15 +11,13 @@ public:
         }
 
         while (i < m && j > m-1) {
-            if (s[i] != s[j]) {
-                if (s[j] >= s[i]) {
-                    res[i] = s[i];
-                    res[j] = s[i];
-                } else {
-                    res[i] = s[j];
-                    res[j] = s[j];
-                }
-            } else{
+            // s[i] > s[j] 
+            if (s[i] > s[j]) {
+                res[i] = s[j];
+                res[j] = s[j];
+                
+            }
+            else {
                 res[i] = s[i];
                 res[j] = s[i];
             }
